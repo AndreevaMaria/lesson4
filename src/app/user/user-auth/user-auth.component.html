@@ -1,0 +1,14 @@
+<p>
+
+  {{ email }}
+
+
+  <input type="email" [(ngModel)]="email" placeholder="email">
+  <input type="password" [(ngModel)]="password" placeholder="password">
+  <button (click)="auth()">Auth</button>
+</p>
+<p *ngIf="user">
+  {{user.name}} <br>
+  {{user.email}} <br>
+  {{user.avatar}}
+</p>
